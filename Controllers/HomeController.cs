@@ -22,7 +22,26 @@ namespace BowlThemUp.Controllers
         {
             return View();
         }
-
+        public IActionResult About()
+        {
+            return View();
+        }
+        public IActionResult Booking()
+        {
+            return View();
+        }
+        public IActionResult Events()
+        {
+            return View();
+        }
+        public IActionResult Contact()
+        {
+            return View();
+        }
+        public IActionResult VrTour()
+        {
+            return View();
+        }
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
