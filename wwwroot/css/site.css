@@ -15,4 +15,7 @@ html {
 
 body {
   margin-bottom: 60px;
+  background-image: url("../img/bowl.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
