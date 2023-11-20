@@ -1,33 +1,63 @@
-﻿
-@{
-    ViewData["Title"] = "Contact";
-}
-
-<h1>Contact</h1>
-
-<style>
-
-   .query{
-       width:300px;
-       height:150px;
-       text-align:left;
-       vertical-align: top;
-
-       max-height:300px;
-                                    
-</style>
-
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap HTML Form</title>
+    <!-- Add Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
 <body>
-    <form>
-        <label id="fname">Forename:</label>
-        <input type="text" id="fname" name="fname" value="">
-        <br /><br />
-        <label id="sname">Surname:</label>
-        <input type="text" id="sname" name="sname" value="">
-        <br /><br />
-        <label id="query">Query:</label>
-        <textarea class="query"></textarea>
-        <br /><br />
-        <button value="Send">Submit</button>
-    </form>
+
+    <div class="container mt-5">
+        <h1>Contact Us</h1>
+
+        <form action="/submit_form" method="post">
+            <div class="form-group">
+                <!-- Text input for name -->
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <!-- Email input for email address -->
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <!-- Dropdown/select for subject -->
+                <label for="subject">Subject:</label>
+                <select class="form-control" id="subject" name="subject">
+                    <option value="general">General Inquiry</option>
+                    <option value="support">Technical Support</option>
+                    <option value="feedback">Feedback</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <!-- Textarea for message -->
+                <label for="message">Message:</label>
+                <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <!-- Checkbox for newsletter subscription -->
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="subscribe" name="subscribe">
+                    <label class="form-check-label" for="subscribe">Subscribe to our newsletter</label>
+                </div>
+            </div>
+
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <!-- Add Bootstrap JS and Popper.js (if needed) -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
 </body>
+</html>
