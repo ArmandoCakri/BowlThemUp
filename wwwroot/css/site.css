@@ -20,3 +20,7 @@ body {
   background-size: 100%;
 }
 
+@font-face {
+    font-family: font;
+    src:url("../fonts/Bowling.otf");
+}
