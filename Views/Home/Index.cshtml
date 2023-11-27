@@ -9,7 +9,8 @@
         .content {
             width: 45%;
             height: 80%;
-            float: left; /* Float the content to the left */
+            float: right; /* Float the content to the left */
+           
         }
 
         .navbar {
@@ -19,7 +20,7 @@
         }
 
             .navbar ul {
-                background-color: grey;
+                background: linear-gradient(to left, #333, #aaa);
                 list-style: none;
                 padding: 40px;
                 margin: 0;
@@ -45,9 +46,21 @@
                     color: white;
                     text-decoration: none;
                 }
-
+            .navbar li.img1{
+                border:none;
+            }
+            .imgg{
+                float:left;
+                margin-left:70px;
+                height:50px;
+                width:50px;
+            }
         h1 {
-            font-size: 50px;
+            font-size:120px;
+            font-family:optima;
+        }
+        h2{
+            font-size:30px;
         }
 
         body {
@@ -63,6 +76,8 @@
 </head>
 <body>
     <div class="content">
+        <h1><i>THE BOWL THEM UP</i></h1>
+        <h2><i>Bowling is an art and the ball is my canvas</i></h2>
     </div>
     <div class="navbar">
         <ul>
@@ -87,7 +102,12 @@
             <li class="navitem">
                 <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="VrTour">VR-Tour</a>
             </li>
+            <li class="img1">
+                <a href="https://www.instagram.com/tenpin_uk/"> <img class="imgg" src="~/img/ig.jpg" alt="Follow us on Instagram" /></a>
+                <a href="https://www.facebook.com/SuperBowlingInstant/?locale=en_GB"> <img class="imgg" src="~/img/fb.jpg" alt="Follow us on Facebook" /></a>
+                <a href="https://www.facebook.com/SuperBowlingInstant/?locale=en_GB"> <img class="imgg" src="~/img/x.jpg" alt="Follow us on Twitter" /></a>
+            </li>
         </ul>
-        <a href="https://www.instagram.com/tenpin_uk/" <img src="img/ig.png"
+        
     </div>
 </body>
