@@ -21,13 +21,22 @@
             .navbar ul {
                 background-color: grey;
                 list-style: none;
-                padding: 0;
+                padding: 40px;
                 margin: 0;
+                border-radius:4px;
+                margin-right:70px;
+                height:60%;
             }
 
             .navbar li {
                 text-align: center;
-                border-bottom: 1px solid white;
+                border: 1px solid white;
+                height:60px;
+                font-size:30px;
+                margin-bottom:30px;
+                border-radius:10px;
+                width:84%;
+                margin-left:8%;
             }
 
                 .navbar li a {
@@ -58,11 +67,27 @@
     <div class="navbar">
         <ul>
             <li class="navitem">
-                <h2><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a></h2>
+                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
             </li>
             <li class="navitem">
                 <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
             </li>
+            <li class="navitem">
+                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="About">About</a>
+            </li>
+            <li class="navitem">
+                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Booking">Booking</a>
+            </li>
+            <li class="navitem">
+                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Events">Events</a>
+            </li>
+            <li class="navitem">
+                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Contact">Contact</a>
+            </li>
+            <li class="navitem">
+                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="VrTour">VR-Tour</a>
+            </li>
         </ul>
+        <a href="https://www.instagram.com/tenpin_uk/" <img src="img/ig.png"
     </div>
 </body>
