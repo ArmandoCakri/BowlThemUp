@@ -3,7 +3,23 @@
 @{
     ViewData["Title"] = "Index";
 }
+<style>
+    tr {
+        background-color: #f5f5f5; /* Change background color on hover */
+    }
 
+    tr:hover {
+        background-color: green;
+    }
+
+    td {
+        font-size: 18px;
+    }
+    p
+    {
+
+    }
+</style>
 <h1>Index</h1>
 
 <p>
@@ -37,13 +53,13 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Customer.CustomerID)
+                @Html.DisplayFor(modelItem => item.Customer.FirstName)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Alley.AlleyID)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Player.PlayerID)
+                @Html.DisplayFor(modelItem => item.Player.PlayerName)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.StartDate)
