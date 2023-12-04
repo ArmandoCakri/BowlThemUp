@@ -21,6 +21,14 @@ body {
 }
 
 @font-face {
-    font-family: font;
+    font-family: Fonty;
     src:url("../fonts/Bowling.otf");
+}
+
+.navbar-custom {
+    background: linear-gradient(to left, #333, #aaa)
+}
+
+.navbar-text {
+    color: white
 }
