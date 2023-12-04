@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using BowlThemUp.Models;
 
 namespace BowlThemUp.Data
 {
@@ -9,5 +10,9 @@ namespace BowlThemUp.Data
             : base(options)
         {
         }
+        public DbSet<BowlThemUp.Models.Alley>? Alley { get; set; }
+        public DbSet<BowlThemUp.Models.Booking>? Booking { get; set; }
+        public DbSet<BowlThemUp.Models.Player>? Player { get; set; }
+        public DbSet<BowlThemUp.Models.Customer>? Customer { get; set; }
     }
 }

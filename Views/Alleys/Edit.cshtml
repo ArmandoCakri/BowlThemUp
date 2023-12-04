@@ -1,0 +1,44 @@
+﻿@model BowlThemUp.Models.Alley
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Alley</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="AlleyID" />
+            <div class="form-group">
+                <label asp-for="LaneType" class="control-label"></label>
+                <input asp-for="LaneType" class="form-control" />
+                <span asp-validation-for="LaneType" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LaneCondition" class="control-label"></label>
+                <input asp-for="LaneCondition" class="form-control" />
+                <span asp-validation-for="LaneCondition" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LaneLength" class="control-label"></label>
+                <input asp-for="LaneLength" class="form-control" />
+                <span asp-validation-for="LaneLength" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

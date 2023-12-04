@@ -1,0 +1,36 @@
+﻿@model BowlThemUp.Models.Alley
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Alley</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.LaneType)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.LaneType)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.LaneCondition)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.LaneCondition)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.LaneLength)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.LaneLength)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.AlleyID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
