@@ -12,5 +12,9 @@ namespace BowlThemUp.Controllers
         {
             return View();
         }
+        public IActionResult Birthdays()
+        {
+            return View();
+        }
     }
 }
