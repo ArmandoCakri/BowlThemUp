@@ -30,7 +30,7 @@ namespace BowlThemUp.Models
             set => _price = value;
         }
 
-        public float CalculateTotalCost()
+        public float CalculateTotalCost() //Function that calculates the total cost of the booking.
         {
             TimeSpan duration = EndDate - StartDate;
             float costPerHour = 20;

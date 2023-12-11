@@ -20,15 +20,19 @@ body {
   background-size: 100%;
 }
 
-@font-face {
+@font-face { /* The custom font we're using */
     font-family: Fonty;
     src:url("../fonts/Bowling.otf");
 }
 
-.navbar-custom {
+.navbar-custom { /* Gradient colour on the navbar */
     background: linear-gradient(to left, #333, #aaa)
 }
 
-.navbar-text {
+.navbar-text { /* Colour of text on the navbar buttons */
     color: white
+}
+
+.festive{ /* Colour for the text on the christmas deals page */
+    color:red;
 }
