@@ -16,5 +16,9 @@ namespace BowlThemUp.Controllers
         {
             return View();
         }
+        public IActionResult Business()
+        {
+            return View();
+        }
     }
 }
